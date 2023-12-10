@@ -65,7 +65,29 @@ The data sets contain the following information:
 Out of the several datasets that were collected, only some features and rows are relevant to the process. Therefore, in this step, the features that are not required from each dataset were dropped. 
 
 ### - Exploratory Data Analysis
+#### - The MoviesDB Analysis
+- For this dataset, the relevant columns were title, genres and popularity. The genres column originally did not exist, the [TMBb API](https://api.themoviedb.org/3/genre/movie/list) was used to fetch genres of different movies using their titles.
 
+- Using the merged data frame, the genres were sorted according to their popularity, which resulted in Drama, Comedy, Thriller, Action, and Horror being the top 5 most popular genres in The MoviesDB dataset. A bar chart was used to visualize these findings.   
+
+#### - IMDB Movies Analysis
+- For this dataset, the relevant tables to be used were the `movie_ratings` and `movie_basics`. Since these two tables have the same `movie_id`, they were joined and the necessary columns obtained were `primary_title`, `genres`, `start_year`, `averagerating`, and `numvotes`.
+
+- The resulting data frame was then sorted by the `numvotes` column in descending order then the top 5 most popular genres were obtained based on the highest number of votes. A bar chart was used to visualize the findings.   
+
+#### - Rotten Tomatoes Analysis
+- The two datasets containing reviews and movie information were merged into one dataset with `id`, `rating`, `fresh` (This is a metric in Rotten Tomatoes that is obtained from the ratings and reviews a movie gets. Can be Rotten(with a low rating and mostly negative reviews) or Fresh (if ratings are high and reviews are mostly positive)), `genre`, and `box_office` being used as the relevant columns.
+
+- The resulting dataset was then sorted by the `box_office` column which was the amount of money made by a movie during its box office lifetime. From this, the top 5 genres were generated from the top 5 highest-earning movies at the box office.
+
+- Action, Comedy, Drama, Romance, and suspense were the top 5 highest earning genres. A bar plot was used to visualize these findings.
+
+#### - Box Office Mojo Analysis
+- In the resulting bom_movie dataset, a new column `profit` was added and the dataset was sorted by the `profit` column in descending order.
+
+- Since there were no movie genres in the resulting dataset, the [TMDb API](https://api.themoviedb.org/3/genre/movie/list) was used to fetch genres for the movies in the `title` column.
+
+- The top 5 most profitable genres were Science Fiction, Action, Adventure, and Fantasy. A bar chart was used to visualize the findings. 
 
 
 ## Conclusions
