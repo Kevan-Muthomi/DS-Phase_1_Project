@@ -44,4 +44,37 @@ Equip the head of Microsoft's new movie studio with comprehensive data-backed in
 - Conclusions
 - Recommendations
 
+## Data Understanding
+The data used in this project was obtained from various movie content service providers such as Rotten Tomatoes, The Movies DB, Box Office Mojo, IMDB, and The Numbers DB.
+The data sets contain the following information:
+   - **Rotten Tomatoes** :
+   - **The Movies DB** :
+   - **Box Office Mojo** :
+   - **IMDB**: It is a database that contains 8 tables: `movie_basics`, `directors`, `known_for`, `movie_akas`, `movie_ratings`, `persons`, `principals`, and `writers`. 
+   - **The Numbers DB**:
 
+## Methodology
+### - Data Wrangling
+Out of the several datasets that were collected, only some features and rows are relevant to the process. Therefore, in this step, the features that are not required from each dataset were dropped. 
+
+### - Exploratory Data Analysis
+
+
+## Conclusions
+- The 5 most popular genres from the data above are : 
+    1. Drama
+    1. Comedy
+    1. Action and Adventure
+    1. Romance
+    1. Thrillers
+
+- The movies of the genre Action have the best box office performance. This is attributed to the box office earnings
+
+- The movies with the highest ratings and best reviews are positively correlated with performing well at the box office
+
+## Recommendations
+- Microsoft Studio should consider releasing movie content that revolves around the 5 most popular genres above due to their popularity which is a significant fact to consider since popularity is generally attributed to box office success.
+
+- Microsoft Studio should also consider focusing on ratings and reviews from different movies. This will help in coming up with better-informed decisions that are crucial in determining their success at the box office.
+
+- Microsoft Studio should also consider incorporating much newer movie titles into their lineup of movies. This will assist in maintaining relevance in the box office industry.
