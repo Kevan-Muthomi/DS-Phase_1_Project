@@ -47,11 +47,18 @@ Equip the head of Microsoft's new movie studio with comprehensive data-backed in
 ## Data Understanding
 The data used in this project was obtained from various movie content service providers such as Rotten Tomatoes, The Movies DB, Box Office Mojo, IMDB, and The Numbers DB.
 The data sets contain the following information:
-   - **Rotten Tomatoes** :
-   - **The Movies DB** :
-   - **Box Office Mojo** :
-   - **IMDB**: It is a database that contains 8 tables: `movie_basics`, `directors`, `known_for`, `movie_akas`, `movie_ratings`, `persons`, `principals`, and `writers`. 
-   - **The Numbers DB**:
+   - **Rotten Tomatoes** : It has 2 datasets:
+        1. `rt.reviews` which includes the fields `id`, `review`, `rating`, `fresh`, `critic`, `top_critic`, `publisher`
+           
+        2.  `rt.movie_info` which includes the fields `id`, `synopsis`, `rating`, `genre`, `director, writer`, `theater_date`, `dvd_date`, `currency, box_office`, `runtime`, and `studio`.
+          
+   - **The Movies DB**: It has one dataset `tmdb.movies`, which contains the fields: `genre_ids`, `id`, `original_language`, `original_title`, `popularity`, `release_date`, `title`, `vote_average`, and `vote_count`
+     
+   - **Box Office Mojo**: It has one dataset `bom.movie_gross` which has the fields `title`, `studio`, `domestic_gross`, `foreign_gross`, and `year`.
+   
+   - **IMDB**: It is a SQL database that contains 8 tables: `movie_basics`, `directors`, `known_for`, `movie_akas`, `movie_ratings`, `persons`, `principals`, and `writers`.
+   
+   - **The Numbers DB**: It has one dataset `tn.movie_budgets` which contains the `fields id`, `release_date`, `movie`, `production_budget`, `domestic_gross`, and `worldwide_gross`
 
 ## Methodology
 ### - Data Wrangling
