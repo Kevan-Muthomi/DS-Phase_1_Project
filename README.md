@@ -108,3 +108,6 @@ Out of the several datasets that were collected, only some features and rows are
 - Microsoft Studio should also consider focusing on ratings and reviews from different movies. This will help in coming up with better-informed decisions that are crucial in determining their success at the box office.
 
 - Microsoft Studio should also consider incorporating much newer movie titles into their lineup of movies. This will assist in maintaining relevance in the box office industry.
+
+## Presentation Slides
+The link to the [Canva Presentation](https://www.canva.com/design/DAF1_57ehjs/OYVLxzb04pljA-QIaJ15lQ/edit?utm_content=DAF1_57ehjs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
